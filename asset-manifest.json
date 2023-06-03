@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/mohdmiraj/static/css/main.d62efe74.css",
+    "main.js": "/mohdmiraj/static/js/main.f41d2bd8.js",
+    "static/js/787.b2e1b36e.chunk.js": "/mohdmiraj/static/js/787.b2e1b36e.chunk.js",
+    "static/media/person.png": "/mohdmiraj/static/media/person.893ea345e9a15733a8c6.png",
+    "static/media/personOne.png": "/mohdmiraj/static/media/personOne.0ffde44a9f05752f4aa9.png",
+    "static/media/personRight.png": "/mohdmiraj/static/media/personRight.0d5c6bb4f3ac71d0a73b.png",
+    "static/media/bannerpersion.png": "/mohdmiraj/static/media/bannerpersion.7592b1a27a3b172eae12.png",
+    "static/media/csslogo.png": "/mohdmiraj/static/media/csslogo.8a182087615a3845ebac.png",
+    "static/media/reduxlogo.png": "/mohdmiraj/static/media/reduxlogo.543b98d3c75b48613322.png",
+    "static/media/js-logo.png": "/mohdmiraj/static/media/js-logo.afc2ed968d0851cb9370.png",
+    "static/media/firebase_logo.webp": "/mohdmiraj/static/media/firebase_logo.62ae00098ff2eb407603.webp",
+    "static/media/sasslogo.webp": "/mohdmiraj/static/media/sasslogo.9b11cde7f2b92579870e.webp",
+    "static/media/muilogo.webp": "/mohdmiraj/static/media/muilogo.99b80c8b032ef0ca8ed3.webp",
+    "static/media/bootstraplogo.webp": "/mohdmiraj/static/media/bootstraplogo.d0b6881e4261e39e8b8b.webp",
+    "static/media/logo.svg": "/mohdmiraj/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/mohdmiraj/index.html",
+    "main.d62efe74.css.map": "/mohdmiraj/static/css/main.d62efe74.css.map",
+    "main.f41d2bd8.js.map": "/mohdmiraj/static/js/main.f41d2bd8.js.map",
+    "787.b2e1b36e.chunk.js.map": "/mohdmiraj/static/js/787.b2e1b36e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d62efe74.css",
+    "static/js/main.f41d2bd8.js"
+  ]
+}
