@@ -13,6 +13,7 @@ import Footer from '../../Components/Parts/Footer'
 import ContactForm from '../../Components/ContactForm'
 import { useState } from 'react'
 import { useEffect } from 'react'
+import Header from '../../Components/Parts/Header'
 console.log(jsonData)
 const HomePage = () => {
   const [popObject, setPopObject] = useState("")
@@ -25,6 +26,7 @@ const HomePage = () => {
   }, [popObject])
   return (
     <Fragment>
+      <Header />
       <HomeBanner />
       <section className="min-h-fit bg-bg_light_primary" id="skills">
         <div className="md:container px-5  py-14">
@@ -48,7 +50,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section className="bg-bg_light_primary" id="">
+      <section className="bg-bg_light_primary" id="projects">
         <div className="md:container px-5 pt-14 min-h-screen flex flex-col justify-between">
           <div>
             <SectionTitle title="Projects" subTitle="MY CREATION" />
