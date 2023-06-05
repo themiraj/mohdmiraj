@@ -16,7 +16,7 @@ import { useEffect } from 'react'
 import Header from '../../Components/Parts/Header'
 console.log(jsonData)
 const HomePage = () => {
-  const [popObject, setPopObject] = useState("")
+  const [popObject, setPopObject] = useState('')
   useEffect(() => {
     if (popObject) {
       document.body.style.overflow = 'hidden'
@@ -91,9 +91,13 @@ const HomePage = () => {
       <Footer />
       {popObject ?
         <div className='popOver' data-aos="fade-left">
-          <button onClick={() => setPopObject("")}>close</button>
-          {popObject.image ? <img src={popObject.image} alt='' /> : null}
+          <div className="header">
+            <button onClick={() => setPopObject("")} className="close"></button>
+            {popObject.image ? <img src={popObject.image} alt='' /> : null} 
+          </div>
+          <div className='pop-body'>
           <div dangerouslySetInnerHTML={{ __html: popObject.text }} />
+          </div>
         </div>
         : null
       }

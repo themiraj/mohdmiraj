@@ -34,12 +34,14 @@ html {
   -o-tab-size: 4;
   tab-size: 4;
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
-  font-feature-settings: normal
+  font-feature-settings: normal;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
-  line-height: inherit
+  line-height: inherit;
+  overflow-x: hidden !important; 
 }
 
 hr {
@@ -1132,8 +1134,6 @@ textarea {
   right: 0;
   top: 0;
   max-width: 450px;
-  background: #fff;
-  padding: 15px;
   overflow: auto;
   z-index: 999;
   box-shadow: 0 0 30px #000;
@@ -1141,8 +1141,12 @@ textarea {
   min-height: 100vh;
   overflow: auto;
   color: rgb(55, 65, 81);
+  backdrop-filter: blur(25px);
+  background: transparent;
 }
-
+.pop-body{
+  padding:15px;
+}
 .popOver p {
   margin-bottom: 15px;
 }
@@ -1152,8 +1156,41 @@ textarea {
   list-style: disc;
 }
 
-.popOver code {
-  color: #000;
-  font-size: .875em;
-  font-weight: 600;
+.popOver .close {
+  position: absolute;
+  right: 10px;
+  top: -4px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+.popOver .close:hover {
+  opacity: 1;
+}
+.popOver .close:before,.popOver .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #333;
+}
+.popOver .close:before {
+  transform: rotate(45deg);
+}
+.popOver .close:after {
+  transform: rotate(-45deg);
+}
+
+.popOver .header{
+  padding: 4px;
+  background-color: #fff5f5;
+  position: sticky;
+  top: 0;
+  min-height: 50px;
+}
+.popOver .header img{
+  width: 50px;
+  width: 50px;
+  object-fit: contain;
 }
