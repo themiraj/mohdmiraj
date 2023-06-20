@@ -17,10 +17,12 @@ import Header from '../../Components/Parts/Header'
 const HomePage = () => {
   const [popObject, setPopObject] = useState('')
   useEffect(() => {
-    if (popObject && Object.keys(popObject).length) {
-      document.body.style.overflow = 'hidden'
+    if (popObject && Object.keys(popObject).length > 0) {
+      document.body.style.overflow = 'hidden' 
+      document.body.style.maxHeight = '100vh'
     } else {
       document.body.style.overflow = 'initial'
+      document.body.style.maxHeight = 'auto'
     }
   }, [popObject])
   return (
